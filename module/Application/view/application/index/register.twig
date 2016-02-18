@@ -1,0 +1,11 @@
+{% extends "layout/layout.twig" %}
+{% block content %}
+    <form method="POST" role="form">
+        {{ formElement(form.get('firstname')) }}
+        {{ formElement(form.get('lastname')) }}
+        {{ formElement(form.get('username')) }}
+        {{ formElement(form.get('password')) }}
+        {{ formElement(form.get('status')) }}
+        {{ formElement(form.get('submit')) }}
+    </form>
+{% endblock %}
